@@ -6,7 +6,75 @@
 </head>
 <body>
 <script>
-  /* write your code below this line  🙂 */
+"use strict"
+  // Part 1: The <script> element can be placed in the <body> or
+  // the <head> section within an HTML document.
+  // ref: https://www.w3schools.com/js/js_whereto.asp
+
+  // Part 2: JavaScript variables can be declared using the var, 
+  // let, or const keywords. 
+  // In this course we, we have been insctructed to not use var.
+  // var is included here only for the purpose of demonstration.
+
+  // Part 2: Examples of the different variable declarations.
+  var firstName = "Silje";
+  let age = 36;
+  const birthCountry = "Norway";
+
+  // ref: https://www.w3schools.com/js/js_variables.asp
+  // ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations
+
+
+  //Part 3: Creating and experementing with unique variables.
+  
+  // Integers (whole numbers)
+   let currentAge = 36;
+  const birthYear = 1989
+  let numberOfEreaders = 4
+
+  // Floating point numbers (decimal numbers)
+  let height = 1.64
+  let temperature = 16.4
+  const goldenRatio = 1.618
+
+  // Strings (text)
+  let favoriteFood = "Chicken Tandoori";
+  const courseName = "DAT 100, Programmering Grunnkurs";
+  let currentCity = "Grimstad"
+
+  // Object
+  const student = {
+    course: courseName,
+    city: currentCity,
+    favoriteFood: favoriteFood,
+    currentAge: currentAge,
+    temperature: temperature
+  };
+
+  // Part 4: Declaring PI without var, let or const. Inspecting
+  // error messages via Live Server and browser tools.
+  
+  
+  // First attempt: 
+  // valuePI = 3.14; (attempted first without //)
+  // Error check: From the browser's developer tools: 
+  // Uncaught ReferenceError: valuePI is not defined.
+  // Resolving this error by adding the declaration 
+  // keyword const to valuePI.
+
+  const valuePI = 3.14;
+  // Second error check: After declaring valuePI with const
+  // there are no more errors.
+
+  // Part 5: Trying to reassign a constant after it has been
+  // declared. 
+
+  //  valuePI = 5.4; (commented out after the browser error check)
+  // First error check: From the browser's developer tools:
+  // Uncaught TypeError: Assignment to constant variable.
+  // Second error check: No errors found.
+
+
 
 </script>
 </body>
